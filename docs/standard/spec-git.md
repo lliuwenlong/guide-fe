@@ -35,15 +35,12 @@ rebase 会更改commit的hash(即commit id), 因为rebase做的事情是 apply c
 
 
 ### 1.1 Feat开发流程
-1. 签出develop分支，`git checkout develop`；
-2. 更新develop分支，`git pull origin develop`；
+1. 签出master分支，`git checkout master`；
+2. 更新master分支，`git pull origin master`；
 3. 签出Feat开发分支：`git checkout -b feat-audio-20200712`，每个Feat做一个分支；
-4. 开发完成后，3步提交法（`git fetch`，`git rebase origin/develop`，`git push origin feat-audio-20200712`）提交；
-5. 创建MR（目标develop分支） & 代码复审申请；
-6. 复审通过后点赞；
-7. 由Maintainer合并到develop分支；
-8. 上线后master分支和develop分支对齐，并打版本标签（版本标签遵循[版本规范](./spec-version.md)）。
-
+4. 创建MR（目标develop分支） & 代码复审申请；
+5. 复审通过后点赞；
+6. 由Maintainer合并到develop分支；
 
 ### 1.2 HotFix流程
 1. 签出master分支，`git checkout master`；
